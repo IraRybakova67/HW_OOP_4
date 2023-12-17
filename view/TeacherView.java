@@ -1,4 +1,7 @@
+package view;
 import java.util.List;
+
+import model.Teacher;
 
 public class TeacherView implements UserView<Teacher> {
 

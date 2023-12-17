@@ -1,3 +1,5 @@
+import controller.StudentControler;
+import controller.TeacherControler;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,6 +8,7 @@ public class Main {
         controler.create("Аркадий", "Семенович", "Петров");
         controler.create("Семен", "Олегович", "Сидоров");
         controler.create("Виктор", "Иванович", "Агеев");
+        
         controler.sendOnConsole();
         System.out.println();
 
@@ -20,5 +23,6 @@ public class Main {
 
 
     }
+
 
 }

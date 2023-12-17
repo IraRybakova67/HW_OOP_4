@@ -1,5 +1,8 @@
+package sort;
 import java.util.Iterator;
 import java.util.List;
+
+import model.Student;
 
 public class StudentGroupIterator implements Iterator<Student>{ // класс для переборки группы со студентами реализует интерфейс итератор (<Student>
     // -элемент каждой итерации)

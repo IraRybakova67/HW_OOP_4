@@ -1,10 +1,22 @@
+package model;
 public class Student extends User implements Comparable<Student> {
-
     private int studentId;
+    private double rating;
 
-    public Student(int studentId, String firstName, String secondName, String lastName) { 
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    
+
+    public Student(int studentId, String firstName, String secondName, String lastName, Double rating) { 
         super(firstName, secondName, lastName);
         this.studentId = studentId;
+        this.rating = rating;
 
     }
 
@@ -18,7 +30,7 @@ public class Student extends User implements Comparable<Student> {
     @Override
     public String toString() { 
         return "Student [studentId=" + studentId + ", firstName=" + super.getFirstName() + ", secondName=" + super.getSecondName()
-                + ", lastName=" + super.getLastName() + "]";
+                + ", lastName=" + super.getLastName() + ", средний балл " + String.format("%.2f",rating) +"]";
     }
 
     @Override

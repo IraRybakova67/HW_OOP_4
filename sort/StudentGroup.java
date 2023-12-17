@@ -1,5 +1,9 @@
+package sort;
 import java.util.Iterator;
 import java.util.List;
+
+import StudentGroupIterator;
+import model.Student;
 
 public class StudentGroup implements Iterable<Student>{ //<Student> указывает, что будет перебирать(студентов)
 

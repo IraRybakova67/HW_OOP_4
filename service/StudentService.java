@@ -1,11 +1,17 @@
+package service;
 import java.util.ArrayList;
 import java.util.List;
+
+import model.Student;
+
 
 public class StudentService implements UserService<Student> {
     private final List<Student> studentList = new ArrayList<>();
 
     @Override
     public void create(String firstName, String secondName, String lastName) {
+        double rating;
+        rating = Math.random()*3+2;
 
         int maxID = 0;
         for (Student student : studentList) {
@@ -14,7 +20,7 @@ public class StudentService implements UserService<Student> {
             }
 
         }
-        studentList.add(new Student(++maxID, firstName, secondName, lastName));
+        studentList.add(new Student(++maxID, firstName, secondName, lastName, rating));
 
     }
 
