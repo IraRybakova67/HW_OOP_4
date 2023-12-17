@@ -2,7 +2,6 @@ package sort;
 import java.util.Iterator;
 import java.util.List;
 
-import StudentGroupIterator;
 import model.Student;
 
 public class StudentGroup implements Iterable<Student>{ //<Student> указывает, что будет перебирать(студентов)
@@ -30,8 +29,8 @@ public class StudentGroup implements Iterable<Student>{ //<Student> указыв
         
         return new StudentGroupIterator(this); // this - экземпляр класса передаст "сам себя" 
         // Метод ожидает чтобы ему передали группу студентов, но this - экземпляр класса передаст "сам себя"
-        // метод вернет итератор студентов,т.е. Iterator<Student> это интерфейс, StudentGroupIterator реализует этот интерфейс, следовательно
-        // 
+        // метод вернет итератор студентов,т.е. Iterator<Student> это интерфейс, StudentGroupIterator реализует этот интерфейс
+        
     }
 
 }
